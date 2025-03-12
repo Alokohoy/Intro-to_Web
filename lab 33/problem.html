@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Labs</title>
+</head>
+<body>
+
+    <h1>Welcome to JavaScript</h1>
+
+    <script>
+        alert("Welcome to JavaScript!");
+        console.log("JavaScript is working!");
+
+        var old_val = 10;
+        let new_val = 20;
+        const country = "USA";
+
+        console.log("Initial values:");
+        console.log("var old_val: ", old_val);
+        console.log("let new_val: ", new_val);
+        console.log("const country: ", country);
+
+        new_val = 25;
+        console.log("Reassigned let new_val: ", new_val);
+
+        var name = "John";
+        var age = 28;
+        var isStudent = true;
+        var score = null;
+        var address;
+
+        console.log("Lab 3: Data Types");
+        console.log("Name: " + name + " - Type: " + typeof name);
+        console.log("Age: " + age + " - Type: " + typeof age);
+        console.log("Is Student: " + isStudent + " - Type: " + typeof isStudent);
+        console.log("Score: " + score + " - Type: " + typeof score);
+        console.log("Address: " + address + " - Type: " + typeof address);
+
+        var username = prompt("What is your name?");
+        var age_user = prompt("How old are you?");
+
+        alert("Hello, " + username + "! You are " + age_user + " years old.");
+    </script>
+
+</body>
+</html>
