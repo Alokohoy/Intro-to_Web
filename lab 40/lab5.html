@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding List Items</title>
+</head>
+<body>
+
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <input type="text" id="itemInput" placeholder="Enter item name">
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            let list = document.getElementById("itemList");
+            let input = document.getElementById("itemInput");
+            let newItemText = input.value.trim();
+
+            if (newItemText !== "") {
+                let newItem = document.createElement("li");
+                newItem.textContent = newItemText;
+                list.appendChild(newItem);
+                input.value = "";
+            } else {
+                alert("Please enter an item name!");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover Event</title>
+    <style>
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            text-align: center;
+            line-height: 150px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">Hover Me</div>
+
+    <script>
+        const box = document.getElementById("box");
+
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = "blue";
+        });
+
+        box.addEventListener("mouseout", () => {
+            box.style.backgroundColor = "gray";
+        });
+    </script>
+
+</body>
+</html>
