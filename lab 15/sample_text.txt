@@ -1,0 +1,3 @@
+Hello world!
+This is a sample test file
+it contains few lines of text.This line is appended to the file.
