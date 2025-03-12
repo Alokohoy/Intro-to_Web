@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Simple dark shadow */
+.shadow1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 5px gray;
+}
+
+/* Blurred shadow */
+.shadow2 {
+    font-size: 40px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Multiple shadows */
+.shadow3 {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px red, -2px -2px 5px blue;
+}
+
+/* Colorful glow effect */
+.shadow4 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 10px blue, 0px 0px 20px cyan;
+    background-color: black;
+    padding: 10px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding position Property</title>
+    <style>
+        .static-element {
+            position: static;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .relative-element {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .absolute-element {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .fixed-element {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        .sticky-element {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+            padding: 10px;
+        }
+
+        .content {
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="static-element">Static Element (normal flow)</div>
+    <div class="relative-element">Relative Element (moves but still reserves space)</div>
+    <div class="absolute-element">Absolute Element (placed at bottom-right of its parent)</div>
+    <div class="fixed-element">Fixed Element (stays at top-right when scrolling)</div>
+    <div class="sticky-element">Sticky Element (sticks to the top when scrolling)</div>
+
+
+</body>
+</html>
