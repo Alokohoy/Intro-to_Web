@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Invalid JSON Parsing</title>
+</head>
+<body>
+
+    <h1>Understanding JSON Parsing</h1>
+
+    <script>
+        function parseJsonString(jsonString) {
+            try {
+                let parsedData = JSON.parse(jsonString);
+                console.log("Parsed Data:", parsedData);
+            } catch (error) {
+                console.error("Error: Invalid JSON format");
+            }
+        }
+
+        let validJsonString = '{"name": "Alice", "age": 25}';
+
+        let invalidJsonString = '{name: "Alice", age: 25}';
+
+        console.log("Parsing valid JSON:");
+        parseJsonString(validJsonString);
+
+        console.log("Parsing invalid JSON:");
+        parseJsonString(invalidJsonString);
+    </script>
+
+</body>
+</html>
